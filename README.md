@@ -46,4 +46,18 @@ This is how the authorization should be choosen
 ![Adding ClientId and Client Secret](/Capture2.PNG)<BR>	
 
 
+After receiving response use the access_token for accessing the resources of the application
 
+The access_token should be provided under Authorization as Bearer Token
+
+Following are the type of resource URLs available :
+
+Method | Operation | Description | Body |
+--- | --- | --- |--- | 
+GET | /listCategories | List all the cateogries present | NA |
+POST | /addCategory | Add a new category | {"categoryName":,"categoryCode":} |
+GET | /categoryItems/{categoryId} | Get all items of Category where {categoryId} represents the desired Category ID | NA |
+POST | /addItem | Adds an item to repository | {"name":,"categoryId":,"costPrice":,"sellingPrice":,"quantity":} |
+GET | /getCart | Fetches user Cart | NA |
+POST | /checkoutCart | Checkout the cart | NA |
+POST | /addItemToCart/{itemId} | Adding Item to cart where {itemId}  represents the item id of item to be added | NA |
