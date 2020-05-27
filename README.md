@@ -34,7 +34,7 @@ Provide the following JSON as body in the request
 
 After user creation proceed for login. Use the following URL for logging into application
 <APP_BASE_URL>/oauth/token <BR>
-
+![Alt Text](/Capture.PNG)
 
 
 
