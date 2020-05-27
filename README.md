@@ -34,7 +34,16 @@ Provide the following JSON as body in the request
 
 After user creation proceed for login. Use the following URL for logging into application
 <APP_BASE_URL>/oauth/token <BR>
-![Alt Text](/Capture.PNG)
+Add the data to request in the following format <BR><BR>	
+![Adding UserName and Password](/Capture.PNG)<BR>
+	
+Add the Client Id and Client Secret in Authorization (use Basic Auth) <BR>
+The client ID and Client Secret are Hard coded to :<BR>
+	Client ID : testClient <BR>
+	Client Secret : my-secret-key<BR>
+	
+This is how the authorization should be choosen	
+![Adding ClientId and Client Secret](/Capture2.PNG)<BR>	
 
 
 
